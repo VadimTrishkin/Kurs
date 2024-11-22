@@ -128,7 +128,7 @@ private:
 class ClientHandler {
 public:
     void handleRequest(int socket, const std::string& dbFile, const std::string& logFile) {
-        char buffer[512] = {0};  // Увеличиваем размер буфера
+        char buffer[512] = {0}; 
         if (recv(socket, buffer, sizeof(buffer) - 1, 0) <= 0) {
             Log::recordError("Failed to receive initial data");
             return;
@@ -165,7 +165,7 @@ public:
         }
         std::cout << "Received vector count: " << vector_count << std::endl;
 
-        VectorProcessor processor; // Инициализация processor здесь
+        VectorProcessor processor;
 
         for (int i = 0; i < vector_count; ++i) {
             int32_t vector_size;
@@ -187,14 +187,13 @@ public:
             }
             std::cout << std::endl;
 
-            int16_t result = processor.computeProduct(vec);  // Используем processor для вычисления
+            int16_t result = processor.computeProduct(vec);
             send(socket, &result, sizeof(result), 0);
             std::cout << "Sent result: " << result << std::endl;
         }
     }
 };
 
-// Главная функция
 int main(int argc, char* argv[]) {
     if (argc < 3) {
         std::cerr << "Usage: ./server <log_file> <db_file>" << std::endl;
