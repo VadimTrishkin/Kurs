@@ -3,6 +3,7 @@
 #include <sstream>
 #include <openssl/md5.h>
 #include <iomanip>
+#include <algorithm>
 
 bool DatabaseConnector::verifyUser(const std::string& login, const std::string& salt, const std::string& hash, const std::string& dbPath) {
     std::ifstream dbFile(dbPath);
@@ -13,7 +14,9 @@ bool DatabaseConnector::verifyUser(const std::string& login, const std::string& 
     std::string line;
     while (std::getline(dbFile, line)) {
         size_t colonPos = line.find(":");
-        if (colonPos == std::string::npos) continue;
+        if (colonPos == std::string::npos) {
+            continue;
+        }
 
         std::string storedLogin = line.substr(0, colonPos);
         std::string storedPassword = line.substr(colonPos + 1);

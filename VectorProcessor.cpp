@@ -1,6 +1,5 @@
 #include "VectorProcessor.h"
 #include <limits>
-#include <cstdint>
 
 int16_t VectorProcessor::computeProduct(const std::vector<int16_t>& vector) {
     int32_t product = 1;
