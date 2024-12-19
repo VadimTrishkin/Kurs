@@ -1,0 +1,22 @@
+\hypertarget{DatabaseConnector_8h_source}{}\doxysection{Database\+Connector.\+h}
+\mbox{\hyperlink{DatabaseConnector_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef DATABASECONNECTOR\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define DATABASECONNECTOR\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{classDatabaseConnector}{DatabaseConnector}} \{}
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{32     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classDatabaseConnector_afdb10bee67eaa6b1f632326f67929912}{verifyUser}}(\textcolor{keyword}{const} std::string\& login, \textcolor{keyword}{const} std::string\& salt, \textcolor{keyword}{const} std::string\& hash, \textcolor{keyword}{const} std::string\& dbPath);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{keyword}{private}:}
+\DoxyCodeLine{44     std::string generateHash(\textcolor{keyword}{const} std::string\& password, \textcolor{keyword}{const} std::string\& salt);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{55     \textcolor{keywordtype}{bool} compareHashes(\textcolor{keyword}{const} std::string\& serverHash, \textcolor{keyword}{const} std::string\& clientHash);}
+\DoxyCodeLine{56 \};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// DATABASECONNECTOR\_H}}
+\DoxyCodeLine{59 }
+
+\end{DoxyCode}

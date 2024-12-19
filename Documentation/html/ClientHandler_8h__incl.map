@@ -1,0 +1,11 @@
+<map id="ClientHandler.h" name="ClientHandler.h">
+<area shape="rect" id="node1" title="Заголовочный файл для класса ClientHandler, который обрабатывает запросы от клиента." alt="" coords="244,5,367,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="24,155,83,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="282,155,345,181"/>
+<area shape="rect" id="node4" href="$Log_8h.html" title="Интерфейс класса для логирования ошибок." alt="" coords="25,80,82,107"/>
+<area shape="rect" id="node5" href="$DatabaseConnector_8h.html" title="Заголовочный файл для работы с базой данных пользователей." alt="" coords="106,80,267,107"/>
+<area shape="rect" id="node6" href="$VectorProcessor_8h.html" title="Заголовочный файл для класса VectorProcessor." alt="" coords="343,80,481,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="505,80,585,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="609,80,676,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="379,155,445,181"/>
+</map>

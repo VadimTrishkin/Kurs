@@ -1,0 +1,74 @@
+\hypertarget{classDatabaseConnector}{}\doxysection{Класс Database\+Connector}
+\label{classDatabaseConnector}\index{DatabaseConnector@{DatabaseConnector}}
+
+
+Класс для взаимодействия с базой данных пользователей.  
+
+
+
+
+{\ttfamily \#include $<$Database\+Connector.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classDatabaseConnector_afdb10bee67eaa6b1f632326f67929912}{verify\+User}} (const std\+::string \&login, const std\+::string \&salt, const std\+::string \&hash, const std\+::string \&db\+Path)
+\begin{DoxyCompactList}\small\item\em Проверка аутентификации пользователя. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для взаимодействия с базой данных пользователей. 
+
+Класс предоставляет методы для аутентификации пользователей, проверяя их логин и хэш пароля. Аутентификация выполняется с использованием соли и хэширования пароля. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classDatabaseConnector_afdb10bee67eaa6b1f632326f67929912}\label{classDatabaseConnector_afdb10bee67eaa6b1f632326f67929912}} 
+\index{DatabaseConnector@{DatabaseConnector}!verifyUser@{verifyUser}}
+\index{verifyUser@{verifyUser}!DatabaseConnector@{DatabaseConnector}}
+\doxysubsubsection{\texorpdfstring{verifyUser()}{verifyUser()}}
+{\footnotesize\ttfamily bool Database\+Connector\+::verify\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{login,  }\item[{const std\+::string \&}]{salt,  }\item[{const std\+::string \&}]{hash,  }\item[{const std\+::string \&}]{db\+Path }\end{DoxyParamCaption})}
+
+
+
+Проверка аутентификации пользователя. 
+
+Проверяет пользователя в базе данных.
+
+Метод проверяет, существует ли пользователь в базе данных, и совпадает ли хэш пароля с сохраненным хэшем в базе данных. Хэширование пароля выполняется с использованием MD5 и соли.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em login} & Логин пользователя. \\
+\hline
+{\em salt} & Соль, используемая при хэшировании пароля. \\
+\hline
+{\em hash} & Хэш пароля, который передан для проверки. \\
+\hline
+{\em db\+Path} & Путь к файлу базы данных. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Возвращает true, если пользователь найден и хэш пароля совпадает, иначе false.
+\end{DoxyReturn}
+Метод проверяет логин и хеш пароля с солью в базе данных. Сначала из базы данных извлекаются логин и хеш пароля, после чего вычисляется хеш пароля клиента с использованием соли и сравнивается с хешом из базы данных.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em login} & Логин пользователя для проверки. \\
+\hline
+{\em salt} & Соль, используемая для хеширования пароля. \\
+\hline
+{\em hash} & Хеш пароля, полученный от клиента. \\
+\hline
+{\em db\+Path} & Путь к файлу базы данных, содержащей логины и пароли.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Возвращает true, если логин и хеш пароля совпадают с данными в базе данных, иначе возвращает false. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{DatabaseConnector_8h}{Database\+Connector.\+h}}\item 
+\mbox{\hyperlink{DatabaseConnector_8cpp}{Database\+Connector.\+cpp}}\end{DoxyCompactItemize}
