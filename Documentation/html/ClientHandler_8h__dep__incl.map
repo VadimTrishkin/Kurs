@@ -1,4 +1,0 @@
-<map id="ClientHandler.h" name="ClientHandler.h">
-<area shape="rect" id="node1" title="Заголовочный файл для класса ClientHandler, который обрабатывает запросы от клиента." alt="" coords="13,5,135,32"/>
-<area shape="rect" id="node2" href="$ClientHandler_8cpp.html" title="Реализация обработки запросов от клиентов, включая аутентификацию, обработку векторов и отправку резу..." alt="" coords="5,80,143,107"/>
-</map>

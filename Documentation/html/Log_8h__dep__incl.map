@@ -1,6 +1,0 @@
-<map id="Log.h" name="Log.h">
-<area shape="rect" id="node1" title="Интерфейс класса для логирования ошибок." alt="" coords="105,5,163,32"/>
-<area shape="rect" id="node2" href="$ClientHandler_8h.html" title="Заголовочный файл для класса ClientHandler, который обрабатывает запросы от клиента." alt="" coords="13,80,135,107"/>
-<area shape="rect" id="node4" href="$Log_8cpp.html" title="Реализация логирования сообщений об ошибках." alt="" coords="159,80,231,107"/>
-<area shape="rect" id="node3" href="$ClientHandler_8cpp.html" title="Реализация обработки запросов от клиентов, включая аутентификацию, обработку векторов и отправку резу..." alt="" coords="5,155,143,181"/>
-</map>

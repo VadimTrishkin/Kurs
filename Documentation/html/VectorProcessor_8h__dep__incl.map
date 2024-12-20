@@ -1,6 +1,0 @@
-<map id="VectorProcessor.h" name="VectorProcessor.h">
-<area shape="rect" id="node1" title="Заголовочный файл для класса VectorProcessor." alt="" coords="85,5,223,32"/>
-<area shape="rect" id="node2" href="$ClientHandler_8h.html" title="Заголовочный файл для класса ClientHandler, который обрабатывает запросы от клиента." alt="" coords="13,80,135,107"/>
-<area shape="rect" id="node4" href="$VectorProcessor_8cpp.html" title="Реализация класса VectorProcessor для обработки векторов целых чисел." alt="" coords="159,80,311,107"/>
-<area shape="rect" id="node3" href="$ClientHandler_8cpp.html" title="Реализация обработки запросов от клиентов, включая аутентификацию, обработку векторов и отправку резу..." alt="" coords="5,155,143,181"/>
-</map>

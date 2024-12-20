@@ -1,6 +1,0 @@
-<map id="DatabaseConnector.h" name="DatabaseConnector.h">
-<area shape="rect" id="node1" title="Заголовочный файл для работы с базой данных пользователей." alt="" coords="80,5,241,32"/>
-<area shape="rect" id="node2" href="$ClientHandler_8h.html" title="Заголовочный файл для класса ClientHandler, который обрабатывает запросы от клиента." alt="" coords="13,80,135,107"/>
-<area shape="rect" id="node4" href="$DatabaseConnector_8cpp.html" title="Реализация класса DatabaseConnector для работы с базой данных." alt="" coords="159,80,335,107"/>
-<area shape="rect" id="node3" href="$ClientHandler_8cpp.html" title="Реализация обработки запросов от клиентов, включая аутентификацию, обработку векторов и отправку резу..." alt="" coords="5,155,143,181"/>
-</map>
